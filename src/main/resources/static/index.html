@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type: "get",
+            // url: "/valueTest",
+            url: "testValue",
+            success: (payload) => {
+                alert(payload);
+                $("#contents").html(payload);
+            }
+        })
+    </script>
+</head>
+<body>
+<p>Hello, World!</p>
+<div id="contents"></div>
+</body>
+</html>
